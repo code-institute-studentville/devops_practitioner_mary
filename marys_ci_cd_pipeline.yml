@@ -9,7 +9,6 @@ env:
 jobs:
   # Master Only
   job1:
-    if: ${{ github.event_name == 'push' && github.ref == 'refs/heads/main' }}
     name: JOB - To setup a python 3.7 enviroment
     runs-on: ubuntu-latest
 
